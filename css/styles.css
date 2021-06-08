@@ -1,15 +1,16 @@
 :root{
 --font-color-gray: #9597A5;
 
---bg-color-green:  linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+--bg-color-green:  linear-gradient(135deg, rgba(51, 211, 94, 1), rgba(42, 182, 217, 1));
 
+--bg-color-green-hover:linear-gradient(135deg, rgba(51, 211, 94, 0.4), rgba(42, 182, 217, 0.4));
 --bg-color-dark:#2D314D;
 
 --font-color-black:#2D314D;
 
 --font-color-white:#fff;
 
-
+--font-color-green:rgba(48, 200, 143, 1);
 
 
 
@@ -63,6 +64,7 @@ body {
   background-color: #fff;
   color: var(--font-color-black);
   overflow-x: hidden;
+  margin-top: 80px;
 
 }
 
@@ -95,7 +97,7 @@ img {
 /*    HEADER    */
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -157,8 +159,7 @@ line-height: 28px;
 }
 
 .button:hover{
-  opacity: 0.4;
-  color: #fff;
+background-image: var(--bg-color-green-hover);
 }
 
 
@@ -170,7 +171,7 @@ line-height: 28px;
   background-image: url("../img/hero-bg-desktop.png");
   background-repeat: no-repeat;
 
-background-position: calc(50% + 600px) center;
+background-position: calc(50% + 600px) calc(50% - 60px);
 
 position: relative;
 z-index: 2;
@@ -214,11 +215,11 @@ color: var(--font-color-gray);
   background-image: url("../img/hero-phones-desktop.png");
 background-repeat: no-repeat;
 position: absolute;
-top: -50px;
+top: -130px;
 right: calc(50% - 840px);
 
 width: 760px;
-height: 900px;
+height: 950px;
 
 }
 
@@ -342,6 +343,7 @@ margin: 0;
   justify-content: space-between;
 
  padding-bottom: 80px;
+ margin: 0;
 }
 
 .articles__item{
@@ -418,6 +420,7 @@ margin: 0;
 
 .footer-container {
   display: flex;
+
 }
 
 .network__list {
@@ -433,7 +436,6 @@ padding-right: 13px;
 }
 
 .left-list-footer {
-
   margin-left: 130px;
 
 }
@@ -446,11 +448,11 @@ padding-right: 13px;
 .lf__list {
   padding-left: 0;
   list-style: none;
-
+margin: 0;
 }
 
 .lf__item:not(:last-child){
-padding-bottom: 8px;
+padding-bottom: 16px;
 
 }
 .lf__item a {
@@ -461,23 +463,47 @@ letter-spacing: -0.234375px;
 color: var(--font-color-white);
 }
 
-
+.lf__item a:hover {
+  color: var(--font-color-green);
+}
 
 .rf__list {
   padding-left: 0;
   list-style: none;
-
+margin: 0;
 }
 
 .rf__item:not(:last-child){
-  padding-bottom: 8px;
+padding-bottom: 16px;
 
   }
 
 .rf__item a {
+
   text-decoration: none;
   font-size: 15px;
 line-height: 26px;
 letter-spacing: -0.234375px;
 color: var(--font-color-white);
+}
+
+.rf__item a:hover {
+  color: var(--font-color-green);
+}
+
+.footer__button {
+  width: 220px;
+  margin-left: auto;
+
+}
+
+
+.footer__text {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 15px;
+line-height: 26px;
+/* identical to box height, or 173% */
+text-align: right;
+letter-spacing: -0.234375px;
 }
