@@ -1,0 +1,14 @@
+.button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-decoration: none;
+  color: var(--font-color-white);
+  padding: 8px 36px 8px 33px;
+  background-image: var(--bg-color-green);
+  border-radius: 22px;
+}
+
+.button:hover {
+  background-image: var(--bg-color-green-hover);
+}

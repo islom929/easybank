@@ -1,0 +1,46 @@
+
+/*   HERO   */
+
+.hero {
+  background-image: url("../img/hero-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 600px) calc(50% - 60px);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-left-side {
+  width: 440px;
+  margin-right: auto;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  z-index: 2;
+}
+
+.hero__title {
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.hero__text {
+  margin-top: 24px;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: var(--font-color-gray);
+}
+
+.hero::after {
+  content: "";
+  background-image: url("../img/hero-phones-desktop.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -130px;
+  right: calc(50% - 840px);
+  width: 760px;
+  height: 950px;
+}
